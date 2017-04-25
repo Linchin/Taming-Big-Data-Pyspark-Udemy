@@ -5,6 +5,9 @@ sys.path.append("/opt/apache-spark/python/lib/py4j-0.10.4-src.zip")
 from pyspark import SparkConf, SparkContext
 import re
 
+import numpy
+
+
 
 def normalize_words(text):
     return re.compile(r'\W+', re.UNICODE).split(text.lower())
